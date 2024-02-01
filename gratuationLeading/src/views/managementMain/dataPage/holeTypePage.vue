@@ -1,0 +1,36 @@
+<template>
+  <div class="holeTypePage">
+    <pageSearch
+      :search-config="searchConfig"
+      @query-click="handleQueryClick"
+      @reset-click="handleResetClick"
+    />
+    <pageContent
+      ref="contentRef"
+      :content-config="contentConfig"
+      @new-click="handleNewClick"
+      @edit-click="handleEidtClick"
+    />
+    <pageModal :modal-config="modalConfig" ref="modalRef" />
+  </div>
+</template>
+
+<script lang="ts" setup>
+import pageSearch from '@/components/pageSearch.vue'
+import pageContent from '@/components/pageContent.vue'
+import pageModal from '@/components/pageModal.vue'
+
+import searchConfig from '@/config/searchConfig/holeTypeSearch.config'
+import contentConfig from '@/config/contentConfig/holeTypeContent.config'
+import modalConfig from '@/config/modalConfig/holeTypeModal.config'
+
+import usePageModal from '@/hooks/usePageModal'
+import usePageContent from '@/hooks/usePageContent'
+
+// 利用hooks
+const { contentRef, handleQueryClick, handleResetClick } = usePageContent()
+
+const { modalRef, handleNewClick, handleEidtClick } = usePageModal()
+</script>
+
+<style lang="less" scoped></style>

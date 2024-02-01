@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}

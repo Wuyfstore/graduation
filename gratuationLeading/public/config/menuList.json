@@ -1,0 +1,20 @@
+[
+    {
+        "name": "数据管理",
+        "children": [
+            {
+                "url": "/managementMain/holePage",
+                "name": "南通管道数据"
+            }
+        ]
+    },
+    {
+        "name": "用户管理",
+        "children": [
+            {
+                "url": "/managementMain/userPage",
+                "name": "帐号数据"
+            }
+        ]
+    }
+]

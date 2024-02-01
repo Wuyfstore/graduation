@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["DOM", "ESNext"]
+  },
+  "include": ["vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*"]
+}
